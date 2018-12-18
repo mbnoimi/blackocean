@@ -43,6 +43,11 @@ get_header(); ?>
 
 							}
 
+							// Software post types
+							elseif ( is_singular( 'software' ) {
+							     get_template_part( 'partials/software/layout' );
+							}
+
 							// Library post types
 			    				elseif ( is_singular( 'oceanwp_library' )
 			    						|| is_singular( 'elementor_library' ) ) {
@@ -50,11 +55,6 @@ get_header(); ?>
 			    					get_template_part( 'partials/library/layout' );
 
 			    				}
-
-							// Software post types
-							elseif ( is_singular( 'software' ) {
-							     get_template_part( 'partials/software/layout' );
-							}
 
 							// All other post types.
 							else {
